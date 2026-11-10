@@ -1,0 +1,67 @@
+/* Custom styles for Customer Management System */
+
+body {
+    background-color: #f8f9fa; /* Matches Bootstrap bg-light, ensures consistency */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Customization */
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Dashboard Cards Hover Effect */
+.dashboard-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px); /* Lifts the card up slightly */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; /* Adds a deeper shadow */
+}
+
+/* Custom Table Styling */
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5; /* Subtle gray hover for table rows */
+    cursor: pointer;
+}
+
+.table td, .table th {
+    vertical-align: middle; /* Keeps text and action buttons perfectly aligned */
+}
+
+/* Action Buttons in Table */
+.btn-action {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* Custom Status Badges (Modern Soft Colors) */
+.badge-active {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.badge-inactive {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+/* Form Styling */
+.required-field::after {
+    content: " *";
+    color: red;
+}

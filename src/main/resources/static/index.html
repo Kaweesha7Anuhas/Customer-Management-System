@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management System</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome CSS CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-users-cog me-2"></i>CMS Dashboard
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Application Container -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Main Content Area -->
+            <main class="col-12 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Overview</h1>
+                </div>
+                
+                <div id="app-content">
+                    <div class="alert alert-success" role="alert">
+                        <i class="fas fa-check-circle me-2"></i>
+                        Frontend successfully connected to Spring Boot!
+                    </div>
+                    <!-- We will inject the Dashboard Cards and Customer Table here in the next steps -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- jQuery CDN (Required for AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap 5 JS Bundle CDN (Required for Modals and Dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Our Custom JavaScript -->
+    <script src="js/customer.js"></script>
+</body>
+</html>
